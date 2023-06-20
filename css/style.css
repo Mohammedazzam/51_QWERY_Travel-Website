@@ -13,7 +13,7 @@
 :root {
     --text-color:#fff;
     --bg-color:#000;
-    --main-color:#ffa343
+    --main-color:#ffa343;
     --h1-font:6rem;
     --h2-font:3rem;
     --p-font:1rem;
@@ -22,3 +22,84 @@ body {
      color: var(--text-color);
      background: var(--bg-color);
 }
+
+/* Start Header */
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    background: transparent;
+    padding: 27px 17%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.50s ease;
+    -webkit-transition: all 0.50s ease;
+    -moz-transition: all 0.50s ease;
+    -ms-transition: all 0.50s ease;
+    -o-transition: all 0.50s ease;
+}
+header .logo {
+    font-size: 33px;
+    color: var(--text-color);
+    font-weight: 700;
+}
+span{
+    color: var(--main-color);
+}
+.navbar {
+    display: flex;
+}
+.navbar a {
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 15px 22px;
+    transition: all 0.50s ease;
+    -webkit-transition: all 0.50s ease;
+    -moz-transition: all 0.50s ease;
+    -ms-transition: all 0.50s ease;
+    -o-transition: all 0.50s ease;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+.h-right {
+    display: flex;
+    align-items: center;
+}
+.h-right a:first-child {
+    color: var(--text-color);
+    font-size: var(--p-font);
+    margin-right: 20px;
+}
+.h-right a {
+    vertical-align: middle;
+    font-size: 20px;
+    color: var(--text-color);
+    margin-right: 18px;
+    margin-left: 5px;
+    transition: all 0.50s ease;
+    -webkit-transition: all 0.50s ease;
+    -moz-transition: all 0.50s ease;
+    -ms-transition: all 0.50s ease;
+    -o-transition: all 0.50s ease;
+}
+.h-right a:hover {
+    color: var(--main-color);
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+}
+#menu-icon {
+    color: var(--text-color);
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 100001;
+    display: none;
+}
+/* End Header */
