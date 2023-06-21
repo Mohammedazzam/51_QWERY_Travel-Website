@@ -471,3 +471,12 @@ header.sticky {
     -o-transform: translateX(-4px);
 }
 /* End Footer Section Design */
+
+/* Start CopyRight Section Design */
+.copyright p{
+    text-align: center;
+    padding: 20px;
+    color: #979797;
+    font-size: 15px;
+}
+/* End CopyRight Section Design */
